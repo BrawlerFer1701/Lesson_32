@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.main{
+	width: 100%;
+	background: #ebd5f9;
+	padding: 10px;
+}
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	padding: 25px;
+	color: #5c3d83;
+}
+header h1, p{
+	margin-bottom: 10px;
+}
+
+/*-------------------------*/
+.menu-bar{
+	width: 100%;
+	background: #5c3d83;
+}
+.menu{
+	display: flex;
+	list-style: none;
+}
+.menu li{
+	padding: 10px 20px;
+	display: inline-block;
+/*	background: #6DF2B2;*/
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+}
+li:hover{
+	background: #94A2E0;
+}
+li:hover a{
+	color: black;
+	font-weight: 700;
+}
+/*----------------------------------*/
+.content{
+	background: #f1f1f1;
+	display: flex;		
+}
+.gioi-thieu{
+	padding: 25px 10px;
+	width: 40%;
+	background: none;
+	
+}
+.side-img, .content-img{
+	width: 100%;
+	height: 200px;
+	background: #baa1cb;
+}
+.side-img-small{
+	width: 100%;
+	height: 50px;
+	background: #baa1cb;
+}
+.content h2, div, p{
+	margin-bottom: 15px;
+}
+.main-content{
+	padding: 25px 10px;
+	background: #fff;
+	width: 60%;
+}
+
+/*---------------------------*/
+.footer{
+	background: white;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (max-width: 375px){
+	header h1{
+		text-align: center;
+	}
+	.menu{
+		width: 100%;
+		flex-direction: column;
+	}
+	.menu li{
+		width: 100%;
+		display: initial;
+		text-align: center;
+	}
+	.content{
+		flex-direction: column;
+	}
+	.content .gioi-thieu, .main-content{
+		width: 100%;
+	}
+}
